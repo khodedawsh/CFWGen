@@ -1,0 +1,25 @@
+[package]
+name = "cfwgen"
+version = "0.1.0"
+edition = "2021"
+description = "Template for starting a Yew project using Trunk"
+readme = "README.md"
+repository = "https://github.com/yewstack/yew-trunk-minimal-template"
+license = "MIT OR Apache-2.0"
+keywords = ["yew", "trunk"]
+categories = ["gui", "wasm", "web-programming"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+yew = { version = "0.21", features = ["csr"] }
+reqwasm = "0.5.0"
+serde_json = { version = "1" }
+#rand = "0.9"
+#getrandom = { version = "0.3", features = ["wasm_js"] }
+chrono = "0.4"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["Window", "Crypto", "SubtleCrypto", "WorkerGlobalScope", "CryptoKey"] }
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+base64 = "0.22"
+qrcode = "0.14"
